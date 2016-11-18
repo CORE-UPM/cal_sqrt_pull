@@ -5,11 +5,17 @@
 function empty () {
   document.getElementById("n1").value = "";
 }
+
+function square() {
+  var num = document.getElementById("n1");
+  num.value = num.value * num.value;
+}
 </script>
 </head>
 <body>
   Number:
   <input type="text" id="n1" onclick="empty()"><p>
 
+  <button onclick="square()"> x<sup>2</sup> </button>
 </body>
 </html>
