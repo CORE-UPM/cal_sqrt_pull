@@ -10,6 +10,16 @@ function sqrt() {
   var num = document.getElementById("n1");
   num.value = Math.sqrt(num.value);
 }
+
+function square() {
+  var num = document.getElementById("n1");
+  num.value = num.value * num.value;
+}
+
+function inverse() {
+  var num = document.getElementById("n1");
+  num.value = 1/num.value;
+}
 </script>
 </head>
 <body>
@@ -17,5 +27,7 @@ function sqrt() {
   <input type="text" id="n1" onclick="empty()"><p>
 
   <button onclick="sqrt()"> sqrt(x) </button>
+  <button onclick="square()"> x<sup>2</sup> </button>
+  <button onclick="inverse()"> 1/x </button>
 </body>
 </html>
